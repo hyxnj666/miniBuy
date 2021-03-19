@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" value="123"></input>
+</body>
+<script>
+    let input = document.querySelector("input")
+    input.onblur = function () {
+        // let A = [];
+        // A[0] = this.value
+        // console.log(A);
+        // let arr1 = '1'
+        let arr = ['1', '2']
+        // arr = JSON.parse(localStorage.getItem('arr') || []);
+        arr1 = JSON.parse(localStorage.getItem('arr'));
+        console.log(arr1);
+        arr1.push('3')
+        // console.log(arr);
+        // // arr.push(A)
+        // // arr = [arr, this.value]
+        // // arr.push(arr1)
+        // console.log(arr);
+        // localStorage.setItem('arr', JSON.stringify(arr))
+        localStorage.setItem('arr', JSON.stringify(arr1));
+        // arr.push('34')
+        // arr.push('1')
+        // localStorage.setItem('arr', JSON.stringify(arr));
+
+    }
+
+    // var weekArray = ['周一', '周二', '周三', '周四', '周五']
+    // localStorage.setItem('weekDay', JSON.stringify(weekArray));
+    // weekArray = JSON.parse(localStorage.getItem('weekDay'));
+    // let arr = []
+    // localStorage.setItem('arr', JSON.stringify(arr));
+    // arr = JSON.parse(localStorage.getItem('arr'));
+
+</script>
+
+</html>

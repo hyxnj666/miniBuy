@@ -1,0 +1,29 @@
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+    <view class="order_main">
+      <view wx:for="{{orders}}" wx:key="order_id" class="order_item">
+        <view class="order_no_row">
+          <view class="order_no_text">订单编号</view>
+          <view class="order_no_value">{{item.time}}</view>
+        </view>
+        <view class="order_price_row">
+          <view class="order_price_text">订单价格</view>
+          <view class="order_price_value">￥{{item.price}}</view>
+        </view>
+        <view class="order_time_row">
+          <view class="order_time_text">订单日期</view>
+          <view class="order_time_value">{{item.upd_time}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:elif="{{tabs[1].isActive}}">
+    <image mode="widthFix" src="http://hbimg.b0.upaiyun.com/e1b1467beea0a9c7d6a56b32bac6d7e5dcd914f7c3e6-YTwUd6_fw658"></image>
+  </block>
+  <block wx:elif="{{tabs[2].isActive}}">
+    <image mode="widthFix" src="http://hbimg.b0.upaiyun.com/e1b1467beea0a9c7d6a56b32bac6d7e5dcd914f7c3e6-YTwUd6_fw658"></image>
+  </block>
+  <block wx:elif="{{tabs[3].isActive}}">
+    <image mode="widthFix" src="http://hbimg.b0.upaiyun.com/e1b1467beea0a9c7d6a56b32bac6d7e5dcd914f7c3e6-YTwUd6_fw658"></image>
+  </block>
+</Tabs>
